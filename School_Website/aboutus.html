@@ -1,0 +1,357 @@
+<html>
+<head>
+<style>
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial;
+ padding: 10px;
+ background: #E8ADAA;
+}
+
+/* Header/Blog Title */
+.header {
+ padding: 30px;
+/* text-align: center;*/
+ background: maroon;
+}
+
+
+.header h1 {
+ font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ display: block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+ background-color: maroon;
+ color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+ float: left;
+ width: 75%;
+ /*background-color:#FFDFDD ;*/
+}
+
+
+/* Right column */
+.rightcolumn {
+ float: left;
+ width: 25%;
+ /*background-color:#FFDFDD ;*/
+ padding-bottom: 40px;
+}
+
+
+/* Fake image */
+.fakeimg {
+     /*background-color: #aaa;*/
+ width: 100%;
+ 
+ }
+
+
+/* Add a card effect for articles */
+.card {
+      background-color: #FFCBA4;
+     padding: 20px;
+     margin-top: 10px;
+    }
+
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: maroon;
+ margin-top: 20px;
+}
+
+.image{
+     margin:30px;
+    background-color:#FFCBA4;
+    /*align:center;*/
+   padding:70px;
+}
+
+p{
+   font:Arial;
+   color:maroon;
+  align:right;
+   margin:10px;
+}
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+ 
+      img {
+        max-width: 100%
+        align:center;
+      }
+      .image1 {
+         flex-basis: 40%
+      }
+
+      .text {
+        font-size: 15px;
+        color:white;
+       
+      }
+
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+li {
+ float: left;
+}
+
+li a, .dropbtn {
+ display: inline-block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ background-color: maroon;
+color:white;
+}
+
+li.dropdown {
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #FFCBA4;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: center;
+
+}
+.dropdown-content a:hover {background-color:maroon;color:white;}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid black;
+    float: left;
+    width: 180px; }
+
+   div.gallery:hover {
+   border: none; }
+
+div.gallery img {
+   width: 100%;
+   height: auto; }
+
+div.desc {
+   padding: 15px;
+   text-align: center;
+  font-size:70%;
+}
+
+.textright
+{
+    margin-left:500px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on 
+top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+ .leftcolumn, .rightcolumn { 
+ width: 100%;
+ padding: 0;
+ }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack 
+on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+ .topnav a {
+ float: none;
+ width: 100%;
+ }
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="header">
+    <div class="container">
+        <div class="image1">
+              <center><img src="logo.jpg"width=100"height="150"></center>
+         </div>
+     
+      <div class="text">
+        <h3>Sumana Balika Vidyalaya - Rathnapura<br>සුමනා බාලිකා විද්‍යාලය - රත්නපුර<br>சுமனா பாலிகா வித்யாலயா – ரத்னபுரா</h3>
+      </div>
+    </div>
+</div>
+
+
+<ul>
+ <li><a href="home.html"><b>Home</a></li>
+ <li><a href="expire.html"><b>Events</a></li>
+
+ <li class="dropdown">
+ <a href= class="dropbtn">Gallery</a>
+ <div class="dropdown-content">
+ <a href="galleryphoto.html">Photos</a>
+ <a href="galleryvideo.html">Videos</a>
+ </div>
+ </li>
+
+
+ <li><a href="https://www.facebook.com/sbvratnapura/">News</a></li>
+<li><a href="aboutus.html">About us</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+<h1 style=margin:10px>__About Us__</h1>
+
+<div>
+      <p><br><img src="p3.jpg" style=float:left></p>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp දැක්ම<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"ගුණ නුවණින් යුත් බෞද්ධ බාලිකාවක සමාජයට දායාද කරමු ."</p>
+     <br><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp මෙහෙවර <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"පූර්ණ විෂය මාලාව තුළ සිසු නිපුණතා සංවර්ධනය කල හැකි , ඵලදායි ඉගෙනුම් , &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspඉගැන්වීම් ක්‍රමවේද පාසල තුල ක්‍රියාත්මක කිරීමෙන් උගත්, උපශාන්ත, ඍජු &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ගතිගුණ වලින් හා බොදු හැදියාවකින් යුත් සුමනා බාලිකා දියණියන් සමාජගත &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspකිරීම."</p>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><h1 style=margin:10px>__Our Story__</h1>
+
+<p>Sumana Balika V Ratnapura’s aim is to be a leading school<br><br>
+
+Due to the untiring efforts of Rev. Henpitigedara Gnanaseeha Thero, Ratnapura Sumana Balika Vidyalaya was started in 1952 in a temporary shed at Pattiyagedara. Today the school has emerged as a reputed girl’s schools in Saaragamuwa Province with more than 3000 students and 160 teachers.<br><br>
+
+
+The school created a great difference to the history of Sabaragamuwa when Rev. Henpitagedara Gnanaseeha Thero arrived in Sabaragamuwa in 1935. His arrival was a major milestone to the development of Buddhism in the area.Sri Sumana Maha Vidyalaya and Sumana Balika Vidyalaya are glowing results of his efforts. In addition to the service done for the Education sector, the Thero did a great service by uplifting the living standards of the poor people in the area as well.<br><br>
+Established in a small shack in 1952 as a private school managed by a board of directors, Sumana Balika was later registered as a Government school in 1961. The year 1957 was a significant year for Sumana Balika as they moved into a new environment and was declared open by then Prime Minister S.W.R.D. Bandaranaike. Since then they have developed rapidly and earned the National School status in 1992.<br><br></p>
+
+<h3>The School Environment</h3><br>
+<p>Today Sumana Balika Vidyalaya is a fully equipped school with 25 buildings, an Indoor stadium, an Audio visual room, a Computer unit, Library, a school bus, two science laboratories and a school hostel. The serving principal Mrs. Jayantha Chandrani is a dedicated administrator. She is the 13th principal and was appointed in 2018.<br><br>
+Sumana Balika has shown her skills in both curricular and extracurricular activities. The primary section is a great asset to the school. They have proven their abilities in the Grade 5 scholarship examination. In 2012, twenty students got through the examination while L.L. Pamudu Sarasith Maduranga obtained 183 marks.
+The G.C.E. (O/L) examination brought 88.8% success in 2011 and 21 of them got 9A’s. The Bi-lingual unit was initiated in 2004 and the first batch sat for the examination in 2009. Students of this section gained 100% results and Samudi Hansani Witharana was placed second in the district in 2010.<br><br>
+The Advanced Level stream was first established in 1957 and in 1960 the very first student Miss.C.P. Liyanage entered the university from the Arts Stream. Since then a large number of students have entered the leading universities. In 2012 around 48 students from the Science stream, 83 from Art stream and 86 from Commerce stream got the chance to enter universities.</p>
+
+ <div class="gallery">
+                   <a target="_self" href="p66.jpg">
+                   <img src="p66.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Pioneer of  Sumana Balika Vidyalaya
+Rev. Henpitagedara Gnanaseeha Thero
+School Birtday: 1952-05-13</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p58.jpg">
+                   <img src="p58.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Present Principal of the school: Ms:W.A.I.Jayantha</div>
+            </div>
+
+<div class=textright>
+<h3>School Anthem</h3>
+
+<h4>Dädi edi balapa- Jathiya nanwa<br>
+Särade Särade –Jaya dada nanwa<br>
+Sumana Viduhal garu matha<br><br>
+
+Sip satha salasa- vidu äsa pada<br>
+Rata jathiya ha samayada nanwa<br>
+Salasa susirith maga sada<br>
+Särade Särade –Jaya dada nanwa<br>
+Sumana Viduhal garu matha<br><br>
+
+Dänumata magapa-diunata atha pa<br>
+Ekwee sämada urinura galapa<br>
+Särasi räudi bäthi geetha<br>
+Sumana Viduhal garu matha<br><br>
+
+ Hela däriyange- jeewana nadiye<br>
+ Mihiren mihire suwa genade<br>
+Sumana viduhala jaya bima we<br>
+
+Dädi edi balapa- Jathiya nanwa<br>
+Särade Särade –Jaya dada nanwa<br>
+ Sumana Viduhal garu matha<br><br>
+
+ Särade……… särade…….säradewa.</h4>
+
+</div>
+
+
+<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp__School Location__</h1>
+
+<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7407241558153!2d80.38977521477152!3d6.679009295170959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3bf148c99f9cf%3A0xd24842d9c0d17e7d!2sSumana%20Balika%20Vidyalaya!5e0!3m2!1sen!2slk!4v1622110706576!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+ <h5>© 2021 SBVNet.lk ALL RIGHTS RESERVED @ HARSHANI CHATHURANGIKA</h5>
+</div>
+</body>
+</html

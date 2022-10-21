@@ -1,0 +1,576 @@
+<html>
+<head>
+<style>
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial;
+ padding: 10px;
+ background: #E8ADAA;
+}
+
+/* Header/Blog Title */
+.header {
+ padding: 30px;
+/* text-align: center;*/
+ background: maroon;
+}
+
+
+.header h1 {
+ font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ display: block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+ background-color: maroon;
+ color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+ float: left;
+ width: 75%;
+ /*background-color:#FFDFDD ;*/
+}
+
+
+/* Right column */
+.rightcolumn {
+ float: left;
+ width: 25%;
+ /*background-color:#FFDFDD ;*/
+ padding-bottom: 40px;
+}
+
+
+/* Fake image */
+.fakeimg {
+     /*background-color: #aaa;*/
+ width: 100%;
+ 
+ }
+
+
+/* Add a card effect for articles */
+.card {
+      background-color: #FFCBA4;
+     padding: 20px;
+     margin-top: 10px;
+    }
+
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: maroon;
+ margin-top: 20px;
+}
+
+.image{
+     margin:30px;
+    background-color:#FFCBA4;
+    /*align:center;*/
+   padding:70px;
+}
+
+p{
+   font:Arial;
+   color:maroon;
+}
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+ 
+      img {
+        max-width: 100%
+        align:center;
+      }
+      .image1 {
+         flex-basis: 40%
+      }
+
+      .text {
+        font-size: 15px;
+        color:white;
+       
+      }
+
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+li {
+ float: left;
+}
+
+li a, .dropbtn {
+ display: inline-block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ background-color: maroon;
+color:white;
+}
+
+li.dropdown {
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #FFCBA4;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: center;
+
+}
+.dropdown-content a:hover {background-color:maroon;color:white;}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid black;
+    float: left;
+    width: 180px; }
+
+   div.gallery:hover {
+   border: 10px solid maroon; }
+
+div.gallery img {
+   width: 100%;
+   height: 150px; }
+
+div.desc {
+   padding: 15px;
+   text-align: center;
+  font-size:70%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on 
+top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+ .leftcolumn, .rightcolumn { 
+ width: 100%;
+ padding: 0;
+ }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack 
+on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+ .topnav a {
+ float: none;
+ width: 100%;
+ }
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="header">
+    <div class="container">
+        <div class="image1">
+              <center><img src="logo.jpg"width=100"height="150"></center>
+         </div>
+     
+      <div class="text">
+        <h3>Sumana Balika Vidyalaya - Rathnapura<br>සුමනා බාලිකා විද්‍යාලය - රත්නපුර<br>சுமனா பாலிகா வித்யாலயா – ரத்னபுரா</h3>
+      </div>
+    </div>
+</div>
+
+
+<ul>
+ <li><a href="home.html"><b>Home</a></li>
+  <li><a href="expire.html"><b>Events</a></li>
+
+ <li class="dropdown">
+ <a href= class="dropbtn">Gallery</a>
+ <div class="dropdown-content">
+ <a href="galleryphoto.html">Photos</a>
+ <a href="galleryvideo.html">Videos</a>
+ </div>
+ </li>
+
+
+ <li><a href="https://www.facebook.com/sbvratnapura/">News</a></li>
+<li><a href="aboutus.html">About us</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+<div class="row">
+      <div class="leftcolumn">
+             <br><div class="gallery">
+                   <a target="_self" href="p51.jpg">
+                   <img src="p51.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Eastern band</div>
+            </div>
+               <div class="gallery">
+                   <a target="_self" href="p36.jpg">
+                   <img src="p36.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Prefect perod</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p37.jpg">
+                   <img src="p37.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Cadets team</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p38.jpg">
+                   <img src="p38.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Western Band team 01</div>
+            </div>
+            
+            <div class="gallery">
+                   <a target="_self" href="p40.jpg">
+                   <img src="p40.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Western Band team 02</div>
+            </div>
+                   <div class="gallery">
+                   <a target="_self" href="p18.jpg">
+                   <img src="p18.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Staff</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p19.jpg">
+                   <img src="p19.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Teachers' day celebration</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p20.jpg">
+                   <img src="p20.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Welcome Teachers </div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p21.jpg">
+                   <img src="p21.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School board</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p48.jpg">
+                   <img src="p48.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Workshop for students</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p45.jpg">
+                   <img src="p45.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Parent's meeting</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p24.jpg">
+                   <img src="p24.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Annual sports meet</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p26.jpg">
+                   <img src="p26.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Eastern band</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p28.jpg">
+                   <img src="p28.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Welcome Cheif guest </div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p25.jpg">
+                   <img src="p25.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">St John Ambulance</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p44.jpg">
+                   <img src="p44.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Music group</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p29.jpg">
+                   <img src="p29.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Prefect day 2020</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p30.jpg">
+                   <img src="p30.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Art day pooja dance</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p31.jpg">
+                   <img src="p31.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Shadow dance</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p32.jpg">
+                   <img src="p32.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Welcome song</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p43.jpg">
+                   <img src="p43.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Welcome grade 6 students</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p46.jpg">
+                   <img src="p46.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Workshop by china guide team</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p47.jpg">
+                   <img src="p47.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Workshop by china guide team</div>
+            </div>
+            
+            <div class="gallery">
+                   <a target="_self" href="p41.jpg">
+                   <img src="p41.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Morning Assembly</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p49.jpg">
+                   <img src="p49.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Winning team of Dialog App Challenge</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p50.jpg">
+                   <img src="p50.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Winning team of Dialog App Challenge</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p52.jpg">
+                   <img src="p52.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Lighting an Olympic Lamp School sports meet</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p54.jpg">
+                   <img src="p54.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Marthon of the school sports meet</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p59.jpg">
+                   <img src="p59.jpg" alt="Sangakkara" width="600" height="550">
+                   </a>
+                   <div class="desc">Teachers in Science section</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p34.jpg">
+                   <img src="p34.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Prize giving for best western band team</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p35.jpg">
+                   <img src="p35.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc"> western band compitition</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p1.jpg">
+                   <img src="p1.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">School Location</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p2.jpg">
+                   <img src="p2.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Welcome Cheif guests</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p55.jpg">
+                   <img src="p55.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Dancing group</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p56.jpg">
+                   <img src="p56.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Annual prize giving</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p53.jpg">
+                   <img src="p53.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Winning girl in new inventers compitition</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p58.jpg">
+                   <img src="p58.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc"> School principal Mrs.Jayantha Chandrani</div>
+            </div>
+             <div class="gallery">
+                   <a target="_self" href="p62.jpg">
+                   <img src="p62.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Lord Buddha statue</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p65.jpg">
+                   <img src="p65.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Beauty of the school</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="sbv4.jpg">
+                   <img src="sbv4.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Running champion - Miss Nilani Rathnayaka( old girl of the school)  </div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="sbv5.jpg">
+                   <img src="sbv5.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Kandyan dance</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="p61.jpg">
+                   <img src="p61.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Workshop for School Teachers</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="p27.jpg">
+                   <img src="p27.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Announcing Team</div>
+            </div>
+           <div class="gallery">
+                   <a target="_self" href="sbv3.jpg">
+                   <img src="sbv3.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Sports champions</div>
+            </div>
+            <div class="gallery">
+                   <a target="_self" href="sbv1.jpg">
+                   <img src="sbv1.jpg" alt="Sangakkara" width="600" height="400">
+                   </a>
+                   <div class="desc">Study with Practicals</div>
+            </div>
+           
+      </div>
+
+
+                <div class="rightcolumn">
+
+                                      <div class="card">
+                                         <h2>About Us</h2>
+                                          <div class="fakeimg" ><img src="p3.jpg"width="300"height="200"></div>
+                                          <h5><a href="aboutus.html">View Page</a></h5> 
+                                  </div>
+
+                               <div class="card">
+                                             <h3>__EVENTS__</h3>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="1.png"></p>
+                                                        <p><br>Online Learning...</p>
+                                              </div>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="26.png"></p>
+                                                        <p><br>Annual Prize...</p>
+                                              </div>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="20.png"></p>
+                                                        <p><br>Art Day..</p>
+                                              </div>
+                                              <h5><a href="expire.html">View all</a></h5>  
+                                 </div>
+ 
+                              <div class="card">
+                                              <h3>Follow Us</h3>
+                                               <img src="p4.png">
+                               </div>
+                    </div>
+</div>
+
+<div class="footer">
+ <h5>© 2021 SBVNet.lk ALL RIGHTS RESERVED @ HARSHANI CHATHURANGIKA</h5>
+</div>
+</body>
+</html

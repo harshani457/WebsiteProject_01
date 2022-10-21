@@ -1,0 +1,354 @@
+<html>
+<head>
+<style>
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial;
+ padding: 10px;
+ background: #E8ADAA;
+}
+
+/* Header/Blog Title */
+.header {
+ padding: 30px;
+/* text-align: center;*/
+ background: maroon;
+}
+
+
+.header h1 {
+ font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ display: block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+ background-color: maroon;
+ color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+ float: left;
+ width: 75%;
+ /*background-color:#FFDFDD ;*/
+}
+
+
+/* Right column */
+.rightcolumn {
+ float: left;
+ width: 25%;
+ /*background-color:#FFDFDD ;*/
+ padding-bottom: 40px;
+}
+
+
+/* Fake image */
+.fakeimg {
+     /*background-color: #aaa;*/
+ width: 100%;
+ 
+ }
+
+
+/* Add a card effect for articles */
+.card {
+      background-color: #FFCBA4;
+     padding: 20px;
+     margin-top: 10px;
+    }
+
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: maroon;
+ margin-top: 20px;
+}
+
+.image{
+     margin:30px;
+    background-color:#FFCBA4;
+    /*align:center;*/
+   padding:70px;
+}
+
+p{
+   font:Arial;
+   color:maroon;
+}
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+ 
+      img {
+        max-width: 100%
+        align:center;
+      }
+      .image1 {
+         flex-basis: 40%
+      }
+
+      .text {
+        font-size: 15px;
+        color:white;
+       
+      }
+
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #FFCBA4;
+}
+li {
+ float: left;
+}
+
+li a, .dropbtn {
+ display: inline-block;
+ color: black;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ background-color: maroon;
+color:white;
+}
+
+li.dropdown {
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #FFCBA4;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: center;
+
+}
+.dropdown-content a:hover {background-color:maroon;color:white;}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #FFCBA4;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ width: 100%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: maroon;
+ color:white;
+}
+
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color:#C36241;
+  padding: 20px;
+ width:50%;
+  margin-left:50px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on 
+top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+ .leftcolumn, .rightcolumn { 
+ width: 100%;
+ padding: 0;
+ }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack 
+on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+ .topnav a {
+ float: none;
+ width: 100%;
+ }
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="header">
+    <div class="container">
+        <div class="image1">
+              <center><img src="logo.jpg"width=100"height="150"></center>
+         </div>
+     
+      <div class="text">
+        <h3>Sumana Balika Vidyalaya - Rathnapura<br>සුමනා බාලිකා විද්‍යාලය - රත්නපුර<br>சுமனா பாலிகா வித்யாலயா – ரத்னபுரா</h3>
+      </div>
+    </div>
+</div>
+
+
+<ul>
+ <li><a href="home.html"><b>Home</a></li>
+ <li><a href="expire.html"><b>Events</a></li>
+
+ <li class="dropdown">
+ <a href= class="dropbtn">Gallery</a>
+ <div class="dropdown-content">
+ <a href="galleryphoto.html">Photos</a>
+ <a href="galleryvideo.html">Videos</a>
+ </div>
+ </li>
+
+
+ <li><a href="https://www.facebook.com/sbvratnapura/">News</a></li>
+<li><a href="aboutus.html">About us</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+<div class="row">
+      <div class="leftcolumn">
+             <h1>__SBVNet Sphere__</h1>
+                     <div class="image">
+                                 
+                                
+                               <h2>What is SBVNet ?</h2>
+                                <p><b>SBVNet is the sphere of web services provided by the School.</p>
+                               <h2>What are the services I can access through SBVNet?</h2>
+                                <p><b>Services available in SBVNet sphere are as follows:</p>
+                                 <img src="p69.jpg">
+                                 <img src="p70.jpg">
+                                 <img src="p71.jpg">
+                                 <img src="p72.jpg">
+                                 <img src="p73.jpg">
+                                  <h2>Can I be a member of SBVNet?</h2>
+                                <p><b>All the staff members who have a personal  email and the students, are eligible to be the members. However, some services are limited according to their category.</p>
+                                 <h2>How do I access the services?</h2>
+                                <p><b>Obtain a Username and a Password. Sign Up to be a member</p>
+                    </div>
+                       <h2 style=margin-left:50px>Sign In for SBVNet Sphere</h2>
+                      <div class="container1">
+                                                   <form action="action_page.php">
+
+                                                  <label for="uname">User Name</label>
+                                                  <input type="text" id="uname" name="username" placeholder="User name.">
+
+                                                  <label for="pword">Password</label>
+                                                  <input type="text" id="pword" name="password" placeholder="Password">
+
+                                                     <input type="submit" value="Continue">
+
+                                                 </form>
+                        </div>
+       </div>
+
+
+                <div class="rightcolumn">
+
+                                      <div class="card">
+                                         <h2>About Us</h2>
+                                          <div class="fakeimg" ><img src="p3.jpg"width="300"height="200"></div>
+                                          <h5><a href="aboutus.html">View Page</a></h5> 
+                                  </div>
+
+                               <div class="card">
+                                             <h3>__EVENTS__</h3>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="1.png"></p>
+                                                        <p><br>Online Learning...</p>
+                                              </div>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="26.png"></p>
+                                                        <p><br>Annual Prize...</p>
+                                              </div>
+                                              <div>
+                                                       <p  style="float: left;margin:5px;"><img src="20.png"></p>
+                                                        <p><br>Art Day..</p>
+                                              </div>
+                                             <h5><a href="expire.html">View all</a></h5> 
+                                 </div>
+ 
+                              <div class="card">
+                                              <h3>Follow Us</h3>
+                                               <img src="p4.png">
+                               </div>
+                    </div>
+</div>
+
+<div class="footer">
+ <h5>© 2021 SBVNet.lk ALL RIGHTS RESERVED @ HARSHANI CHATHURANGIKA</h5>
+</div>
+</body>
+</html
